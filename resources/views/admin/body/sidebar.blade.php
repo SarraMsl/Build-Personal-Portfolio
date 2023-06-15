@@ -38,6 +38,25 @@
                     </ul>
                 </li>
 
+                
+    
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ri-mail-send-line"></i>
+                        <span>About slide Setup</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{route('home.slide')}}">Home slide</a></li>
+                    </ul>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{route('home.About')}}">Home About</a></li>
+                        <li><a href="{{route('MultiImage.About')}}"> Add MultiImage</a></li>
+                        <li><a href="{{route('MultiImage.All')}}">All  MultiImage</a></li>
+
+
+
+                    </ul>
+                </li>
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-layout-3-line"></i>
