@@ -53,11 +53,11 @@ class AdminController extends Controller
         $data->email = $request->email;
         $data->username = $request->username; 
         
-        if ($request->file('Profile_image')) {
-            $file = $request->file('Profile_image');
+        if ($request->file('profile_image')) {
+            $file = $request->file('profile_image');
             $filename = date('YmdHi') . $file->getClientOriginalName();
             $file->move(public_path('upload/admin_images'), $filename);
-            $data['Profile_image'] = $filename;
+            $data['profile_image'] = $filename;
         }
         
      //   if ($request->password == $request->cpassword) {

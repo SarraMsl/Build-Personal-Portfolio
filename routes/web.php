@@ -72,7 +72,7 @@ Route::controller(AboutController::class)->group(function (){
 });
 
 Route::controller(PortfolioController::class)->group(function (){
-    Route::get('/home/slide' ,'HomeSlider')->name('home.slide');
+    Route::get('/All/Portfolio','AllPortfolio')->name('all.Portfolio');
 
 
 

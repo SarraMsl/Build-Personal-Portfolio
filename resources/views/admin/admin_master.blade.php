@@ -29,6 +29,8 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
         <!---my style--->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.css">
+        
         <link href="{{asset('backend/assets/css/style0.css')}}"  rel="stylesheet" type="text/css" />
 
     </head>
@@ -72,14 +74,11 @@
 
         <!-- JAVASCRIPT -->
         <script src="{{asset('backend/assets/libs/jquery/jquery.min.js')}}"></script>
-        <script src="{{asset('backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('backend/assets/libs/metismenu/metisMenu.min.js')}}"></script>
         <script src="{{asset('backend/assets/libs/simplebar/simplebar.min.js')}}"></script>
-        <script src="{{asset('backend/assets/libs/node-waves/waves.min.js')}}"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.5.1/waves.js"></script>
         
         <!-- apexcharts -->
-        <script src="{{asset('backend/assets/libs/apexcharts/apexcharts.min.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.26.3/dist/apexcharts.min.js"></script>
 
         <!-- jquery.vectormap map -->
         <script src="{{asset('backend/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
@@ -94,9 +93,11 @@
         <script src="{{asset('backend/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')}}"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
         <script src="{{asset('backend/assets/js/pages/dashboard.init.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+        
 
         <!-- App js -->
         <script src="{{asset('backend/assets/js/app.js')}}"></script>

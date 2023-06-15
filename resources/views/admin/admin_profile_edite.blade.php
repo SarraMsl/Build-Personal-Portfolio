@@ -1,6 +1,5 @@
 @extends('admin.admin_master')
 @section('admin')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 <div class="page-content">
     <div class="container-fluid">
@@ -59,7 +58,7 @@
                             <div class="row mb-3">
                                 <label for="example-password-input" class="col-sm-2 col-form-label">Profile Image</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="file" value="{{ $adminData->profile_image }}" name="Profile_image" id="image">
+                                    <input class="form-control" type="file" value="{{ $adminData->profile_image }}" name="profile_image" id="image">
                                 </div>
                             </div>
 
