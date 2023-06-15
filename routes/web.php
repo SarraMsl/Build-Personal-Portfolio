@@ -69,14 +69,14 @@ Route::controller(AboutController::class)->group(function (){
     Route::get('/About/destroy/item/{id}' ,'destroyImage')->name('item.destroy');
     Route::get('/item/update/image/{id}','editimage')->name('edit.MultiImage');
 
+});
 
-
+Route::controller(PortfolioController::class)->group(function (){
+    Route::get('/home/slide' ,'HomeSlider')->name('home.slide');
 
 
 
 });
-
-
 
 
 Route::get('/dashboard', function () {
