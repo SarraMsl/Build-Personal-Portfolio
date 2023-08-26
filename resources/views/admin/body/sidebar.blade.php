@@ -29,6 +29,7 @@
                         <li><a href="{{route('home.slide')}}">Home slide</a></li>
                     </ul>
                     <ul class="sub-menu" aria-expanded="false">
+                        
                         <li><a href="{{route('home.About')}}">Home About</a></li>
                         <li><a href="{{route('MultiImage.About')}}"> Add MultiImage</a></li>
                         <li><a href="{{route('MultiImage.All')}}">All  MultiImage</a></li>
@@ -47,7 +48,7 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{route('all.Portfolio')}}">All Portfolio</a></li>
-                        <li><a href="{{route('home.slide')}}">Add Portfolio</a></li>
+                        <li><a href="{{route('adding.Portfolio')}}">Add Portfolio</a></li>
 
                     </ul>
              

@@ -41,49 +41,41 @@ function displayRows(startIndex) {
 // Create pagination buttons initially
 createPaginationButtons();
 
+    // Function to filter the table rows based on the entered search query
+    function filterTable() {
+      var input, filter, table, rows, i, td, txtValue, found;
+      input = document.getElementById("searchInput");
+      filter = input.value.trim().toLowerCase(); // Remove leading and trailing whitespace, and convert to lowercase
+      table = document.getElementById("dataTable");
+      rows = table.getElementsByTagName("tr");
+      found = false;
 
+      // Loop through all table rows and hide those that don't match the search query
+      for (i = 0; i < rows.length; i++) {
+          td = rows[i].getElementsByTagName("td")[0]; // Assuming the ID column is the first column (index 0)
 
+          if (td) {
+              txtValue = td.textContent || td.innerText;
+              txtValue = txtValue.trim().toLowerCase(); // Convert the table cell value to lowercase
 
-const searchInput = document.getElementById('searchInput');
-const dataTable = document.getElementById('dataTable');
+              if (filter === "" || txtValue === filter) { // Added condition to check if the filter value is empty
+                  rows[i].style.display = "";
+                  found = true;
+              } else {
+                  rows[i].style.display = "none";
+              }
+          }
+      }
 
-searchInput.addEventListener('keyup', function() {
-    const searchTerm = searchInput.value.toLowerCase();
+      // Hide the table if no matching result is found
+      if (!found) {
+          table.style.display = "none";
+      } else {
+          table.style.display = "";
+      }
+  }
 
-    for (let i = 1; i < dataTable.rows.length; i++) {
-        const row = dataTable.rows[i];
-        let found = false;
-
-        for (let j = 0; j < row.cells.length; j++) {
-            const cell = row.cells[j];
-            const cellText = cell.innerHTML.toLowerCase();
-
-            if (cellText.includes(searchTerm)) {
-                found = true;
-                break;
-            }
-        }
-
-        if (found) {
-            row.style.display = '';
-        } else {
-            row.style.display = 'none';
-        }
-    }
-}); function changeVisibleRowCount(value) {
-var rowCount = parseInt(value);
-var table = document.getElementById("dataTable");
-
-for (var i = 1; i < table.rows.length; i++) {
-var row = table.rows[i];
-
-if (i <= rowCount) {
-  row.style.display = "";
-} else {
-  row.style.display = "none";
-}
-}
-}
-
+  // Attach an event listener to the search input field
+  document.getElementById("searchInput").addEventListener("keyup", filterTable);
 
 

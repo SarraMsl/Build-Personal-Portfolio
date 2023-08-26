@@ -43,7 +43,7 @@ Route::controller(ArticleController::class)->group(function (){
     Route::post('/article/store','store')->name('admin.store');
     Route::put('/article/update/{id}','update')->name('admin.update');
     Route::get('//articles/search','search')->name('articles.search');
-    Route::get('/article/foreach','foreach')->name('admin.foreach');
+    Route::get('/article/foreach','foreach')->name('admin.foreac');
     Route::get('/article/edit/{id}','edit')->name('articles.edit');
     Route::delete('/article/destroy/{id}','destroy')->name('articles.destroy');
 
@@ -66,13 +66,22 @@ Route::controller(AboutController::class)->group(function (){
     Route::get('/About/MultiImage/All' ,'AllMultiImage')->name('MultiImage.All');
     Route::get('/item/foreach','foreach')->name('admin.foreach');
     Route::post('/item/update/{id}','updateMultiImage')->name('update.MultiImage');
-    Route::get('/About/destroy/item/{id}' ,'destroyImage')->name('item.destroy');
+    Route::delete('/About/destroy/item/{id}' ,'destroyImage')->name('item.destroy');
     Route::get('/item/update/image/{id}','editimage')->name('edit.MultiImage');
+
 
 });
 
 Route::controller(PortfolioController::class)->group(function (){
     Route::get('/All/Portfolio','AllPortfolio')->name('all.Portfolio');
+    Route::post('/Add/Portfolio','AddPortfolio')->name('add.Portfolio');
+    Route::get('/AddING/Portfolio','AddINGPortfolio')->name('adding.Portfolio');
+    Route::delete('/Portfolio/destroy/item/{id}' ,'destroyImage')->name('items.destroy');
+    Route::get('/edit/Portfolio/{id}' ,'editPortfolio')->name('edit.Portfolio');
+    Route::post('/update/Portfolio/' ,'UpdatePortfolio')->name('update.Portfolio');
+
+
+
 
 
 

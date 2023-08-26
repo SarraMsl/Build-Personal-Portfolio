@@ -52,7 +52,7 @@
                                                     @endif
                                                 </td>
                                                 <td>{{ $article->name }}</td>
-                                                <td>{{ $article-> qantity  }}</td>
+                                                <td>{{ $article->qantity  }}</td>
                                                 <td>{{ $article->price }}da</td>
                                                 <td>{{ $article->stock }}</td>
                                                
